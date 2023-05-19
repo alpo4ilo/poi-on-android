@@ -40,6 +40,10 @@ shadowJar {
         exclude(dependency('commons-codec:commons-collections4'))
         exclude(dependency('org.apache.commons:commons-collections4'))
         exclude(dependency('commons-io:commons-io'))
+
+        exclude(dependency('org.apache.commons:commons-math3'))
+        exclude(dependency('org.apache.commons:commons-text'))
+        exclude(dependency('org.apache.commons:commons-lang3'))
     }
 
     // Relocate javax dependencies so Android does not choke
